@@ -39,7 +39,6 @@
   .copyright {
     width: 100%;
     padding: 2rem 0 0;
-  
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -55,7 +54,7 @@
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
-    color: var(--black-color);
+    color: var(--clr-primary-3);
     text-transform: capitalize;
   
     span {
@@ -72,7 +71,7 @@
   }
   
   .p-text {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: left;
     color: var(--gray-color);
     line-height: 1.5;
@@ -98,13 +97,14 @@
   }
   
   .app__social {
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
-  
+    margin-top: 25rem;
+    position: fixed;
     padding: 1rem;
+    z-index: 2;
   
     div {
       width: 40px;
@@ -128,8 +128,8 @@
       }
   
       &:hover {
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
+        background-color: var(--clr-grey-7);
+        border-color: var(--clr-grey-7);
   
         svg {
           color: var(--white-color);
@@ -168,7 +168,7 @@
       transition: background-color 0.2s ease-in-out;
   
       &:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--clr-primary-3);
       }
   
       @media screen and (min-width: 2000px) {

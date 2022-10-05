@@ -1,0 +1,96 @@
+nav,
+  .uni {
+    /* height: 130px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0 , 0.1);
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 76px;
+    list-style: none;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-3);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+  }
+  .logo {
+    height: 150px;
+  }
+  .links a {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+    text-decoration: none;
+    list-style: none;
+  }
+  .links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+  }
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    list-style: none;
+
+  }
+  .show-container {
+    height: 10rem;
+  }
+
+
+
+  @media screen and (min-width: 800px) {
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      list-style: none;
+
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+
+    /* this is important because we have in-line css which needs to be priority */
+    .links-container {
+      height: auto !important;
+    }
+    .links {
+      display: flex;
+      list-style: none;
+
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+    
+
+  }
